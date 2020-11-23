@@ -40,4 +40,4 @@ for i in range(0,len(data["features"])):
     ax.plot(lon ,lat, marker= ".", color="green" )
     
 plt.show()
-
+plt.ion(world)
