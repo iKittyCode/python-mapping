@@ -20,7 +20,7 @@ myParams = "format=geojson&starttime=2000-01-01&endtime=2020-01-02&minmagnitude=
 world = gpd.read_file( gpd.datasets.get_path('naturalearth_lowres') )
 ax = world.plot()
 
-# plt.ion()
+
 myRequest = requests.get(url = myURL, params = myParams)   
 data = myRequest.json()
 
@@ -40,4 +40,3 @@ for i in range(0,len(data["features"])):
     ax.plot(lon ,lat, marker= ".", color="green" )
 
 plt.show()
-
