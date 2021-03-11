@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # USGS JSON description 
 # https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 myURL = "https://earthquake.usgs.gov/fdsnws/event/1/query?"
-myParams = "format=geojson&starttime=2000-01-01&endtime=2020-01-02&minmagnitude=7.5"
+myParams = "format=geojson&starttime=2020-01-01&endtime=2021-01-02&minmagnitude=7.5"
 
 # geopandas datasets are here 
 # print(gpd.datasets.get_path('naturalearth_lowres'))
